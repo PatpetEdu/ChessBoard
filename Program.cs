@@ -21,7 +21,9 @@
 
 
 
-                if (int.TryParse(userInput, out number) && number >= 1 && number < 100) //Använder TryParse som ett villkor i en if-sats, kontrollerar om userinput uppfyller villkoren för att kunna skriva ut första kodblocket.
+                if (int.TryParse(userInput, out number) && number >= 1 && number < 100)
+                //Använder TryParse som ett villkor i en if-sats, kontrollerar om userinput uppfyller villkoren för att kunna skriva ut första kodblocket.
+
 
 
                 {
