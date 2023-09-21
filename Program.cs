@@ -48,8 +48,8 @@
 
 
 
-                    string olikaRader = (i + j) % 2 == 0 ? white : black; //beräknar värdet av strängen om det ska vara vit eller svart symbol.
-                    Console.Write(olikaRader); //Skriver ut värdet på konsolen med antingen vit eller svart i en rad.
+                    string rows = (i + j) % 2 == 0 ? white : black; //beräknar värdet av strängen om det ska vara vit eller svart symbol.
+                    Console.Write(rows); //Skriver ut värdet på konsolen med antingen vit eller svart i en rad.
 
 
 
