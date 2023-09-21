@@ -12,8 +12,8 @@
 
             int number;
 
-
-            while (true) //använder en while loop för att kontrollera så användaren har matat in ett värde mellan 1-100
+            //använder en while loop för att kontrollera så användaren har matat in ett värde mellan 1-100
+            while (true) 
             {
                 Console.WriteLine("Ange valfri siffra mellan 1-100"); //text till användaren
 
@@ -21,7 +21,7 @@
 
 
 
-                if (int.TryParse(userInput, out number) && number >= 1 && number < 100)
+                if (int.TryParse(userInput, out number) && number >= 1 && number <= 100)
                 //Använder TryParse som ett villkor i en if-sats, kontrollerar om userinput uppfyller villkoren för att kunna skriva ut första kodblocket.
 
 
@@ -40,8 +40,6 @@
             }
 
             for (int i = 0; i < number; i++) //yttre for loop
-
-
             {
                 for (int j = 0; j < number; j++) //inre for loop
                 {
