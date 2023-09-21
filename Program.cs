@@ -20,14 +20,10 @@
                 string userInput = Console.ReadLine(); //ber användaren mata in ett värde som lagras i userInput
 
 
-
-                if (int.TryParse(userInput, out number) && number >= 1 && number <= 100)
                 //Använder TryParse som ett villkor i en if-sats, kontrollerar om userinput uppfyller villkoren för att kunna skriva ut första kodblocket.
-
-
-
+                if (int.TryParse(userInput, out number) && number >= 1 && number <= 100)            
                 {
-                    break;
+                break;
                 }
                 else
                 {
@@ -35,27 +31,17 @@
                 }
 
 
-
-
             }
-
             for (int i = 0; i < number; i++) //yttre for loop
             {
+
                 for (int j = 0; j < number; j++) //inre for loop
                 {
-
-
-
                     string rows = (i + j) % 2 == 0 ? white : black; //beräknar värdet av strängen om det ska vara vit eller svart symbol.
                     Console.Write(rows); //Skriver ut värdet på konsolen med antingen vit eller svart i en rad.
-
-
-
                 }
 
                 Console.WriteLine(); //lägger till en radbrytning på tidigare utskrivet så att värdet av varje kollumn läggs på olika rader.
-
-
 
             }
 
